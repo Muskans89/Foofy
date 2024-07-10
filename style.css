@@ -3,7 +3,7 @@ body {
     padding: 0;
     background-color: #000000;
     color: #333;
-    
+   
 }
 
 .container {
@@ -297,5 +297,74 @@ body {
 
     .nav-list li {
         margin: 10px 0;
+    }
+
+    .video-text-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features-grid {
+        flex-direction: column;
+    }
+
+    .feature-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .cta-section::before {
+        display: none;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar .container {
+        padding: 0 20px;
+    }
+
+    .video-text h3 {
+        font-size: 2em;
+    }
+
+    .video-text p {
+        font-size: 1em;
+    }
+
+    .features-section h3 {
+        font-size: 2em;
+    }
+
+    .feature-item h4 {
+        font-size: 1.2em;
+    }
+
+    .feature-item p {
+        font-size: 0.9em;
+    }
+
+    .cta-section h3 {
+        font-size: 2em;
+    }
+
+    .cta-section p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .site-footer .footer-column h4 {
+        font-size: 1.2em;
+    }
+
+    .site-footer .footer-column p {
+        font-size: 0.9em;
     }
 }
