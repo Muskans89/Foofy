@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Foofy – Just for Kicks | Pre-Launch</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="site-header">
-        <div class="video-wrapper-hero">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="Capture.PNG" alt="Foofy Logo">
+                </div>
+                <div class="menu-toggle">
+                    <span class="material-icons">menu</span>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="video-wrapper-hero" id="home">
             <video autoplay muted loop>
                 <source src="Product.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <div class="container">
-                <div class="header-content">
-                    
-                </div>
-            </div>
         </div>
     </header>
-    <section class="video-section">
+    <section class="video-section" id="about">
         <div class="overlay"></div>
         <div class="container">
             <div class="video-text-wrapper">
@@ -33,32 +48,38 @@
             </div>
         </div>
     </section>
-    <section class="features-section">
+    <section class="features-section" id="features">
         <div class="container">
             <h3>Key Features</h3>
             <div class="features-grid">
                 <div class="feature-item">
-                    <h4>01</h4>
+                    <span class="material-icons">high_quality</span>
+                   
                     <p>High Quality & Premium Build - Crafted from high-quality materials for durability and a sleek finish that enhances any space</p>
                 </div>
                 <div class="feature-item">
-                    <h4>02</h4>
+                    <span class="material-icons">build</span>
+                   
                     <p>Easy DIY Assembly - Straightforward setup instructions for hassle-free assembly in no time</p>
                 </div>
                 <div class="feature-item">
-                    <h4>03</h4>
+                    <span class="material-icons">style</span>
+                    
                     <p>Stylish & Sleek Design - Modern, eye-catching design that enhances any environment, whether indoors or outdoors</p>
                 </div>
                 <div class="feature-item">
-                    <h4>04</h4>
+                    <span class="material-icons">gamepad</span>
+                    
                     <p>Innovative Gameplay - Experience a completely new way to play that challenge and entertain</p>
                 </div>
                 <div class="feature-item">
-                    <h4>05</h4>
+                    <span class="material-icons">group</span>
+                    
                     <p>Universal Appeal - From children to adults, our game offers engaging features that captivate every age group</p>
                 </div>
                 <div class="feature-item">
-                    <h4>06</h4>
+                    <span class="material-icons">favorite</span>
+                    
                     <p>Crafted in India - With pure love…</p>
                 </div>
             </div>
@@ -71,7 +92,7 @@
             <a href="#" class="cta-button">Get More Details or Place an Order</a>
         </div>
     </section>
-    <footer class="site-footer">
+    <footer class="site-footer" id="contact">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
@@ -93,5 +114,14 @@
             <p>&copy; 2024 Foofy – Just for Kicks. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navList = document.querySelector('.nav-list');
+
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
 </body>
+
 </html>
