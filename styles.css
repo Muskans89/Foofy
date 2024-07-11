@@ -18,14 +18,13 @@ body, html {
 
 .hero-video {
     width: 100%;
-    height: 150%; /* Adjust the height as needed */
-    object-fit: cover;
+    height: 100%;
+    object-fit: fill; /* Adjust this property */
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
 }
-
 
 .overlay {
     position: absolute;
@@ -70,7 +69,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 600px;
     background-color: #1f1e1e;
     position: relative;
 }
@@ -95,7 +94,7 @@ button:hover {
     align-items: center;
     margin: 20px 0;
     border: 2px solid white;
-    padding: 20px;
+    padding: 30px;
 }
 
 .time {
@@ -709,16 +708,47 @@ footer p {
         flex-direction: column;
     }
 
-    .brands-logos {
-        flex-direction: column;
-        align-items: center;
+    @media (max-width: 768px) {
+        .brands-logos {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .brand-logo {
+            margin: 10px 0;
+            width: 50%; /* Display 2 logos per row */
+            max-width: 150px; /* Adjust max-width as needed */
+        }
     }
-
-    .brand-logo {
-        margin: 10px 0;
+    
+    @media (max-width: 768px) {
+        .brands-logos {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .brand-logo {
+            margin: 10px 0;
+            width: 50%; /* Display 2 logos per row */
+            max-width: 150px; /* Adjust max-width as needed */
+        }
     }
-
+    
     .brand-logo img {
         max-width: 100px; /* Adjust the max width if needed */
+    }
+}
+@media screen and (max-width: 768px) {
+    .timer-container {
+        /* Adjust positioning or margins to prevent overlapping */
+        position: relative;
+        margin-top: 20px; /* Example margin */
+        text-align: center; /* Center the timer if needed */
+    }
+
+    .timer {
+        /* Adjust styles for smaller screens */
+        font-size: 14px; /* Example font size */
+        padding: 10px; /* Example padding */
     }
 }
