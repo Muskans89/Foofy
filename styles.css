@@ -16,22 +16,30 @@ body, html {
     color: white;
 }
 
-.hero {
-    background-image: url('img2.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.hero-video {
+    width: 100%;
+    height: 150%; /* Adjust the height as needed */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
+
 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
     text-align: center;
-    padding: 20px;
 }
 
 h1 {
@@ -67,9 +75,10 @@ button:hover {
     position: relative;
 }
 
-.sale-banner img {
+.banner-video {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 .countdown-section {
@@ -250,7 +259,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 150px;
     margin-bottom: 80px;
 }
 
@@ -571,7 +580,12 @@ footer p {
 
     /* Brands logos responsiveness */
     .brands-logos {
-        gap: 30px;
+        flex-direction: column;
+        gap: 20px; /* Adjust the gap between the logos */
+    }
+
+    .brand-logo {
+        margin: 10px auto; /* Center the logos vertically */
     }
 
     .brand-logo img {
@@ -687,5 +701,24 @@ footer p {
         width: auto;
         max-width: 100%;
         max-height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .categories-section .row {
+        flex-direction: column;
+    }
+
+    .brands-logos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brand-logo {
+        margin: 10px 0;
+    }
+
+    .brand-logo img {
+        max-width: 100px; /* Adjust the max width if needed */
     }
 }
