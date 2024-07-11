@@ -227,12 +227,12 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 200px;
+    gap: 50px;
     margin-bottom: 80px;
 }
 
 .brand-logo img {
-    max-width: 120px;
+    max-width: 100px;
     height: auto;
 }
 
@@ -251,17 +251,35 @@ button:hover {
 }
 
 .coupon-section {
+    background: #000; /* Black background */
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.coupon-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #1f1e1e;
-    color: white;
-    padding: 50px 20px;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    max-width: 1200px; /* Add a max-width to center content */
+    width: 100%;
+}
+
+.coupon-box {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    background: #000; /* Black background for the entire box */
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the element's total width */
 }
 
 .coupon-content {
     flex: 1;
     padding: 20px;
+    max-width: 50%;
+    box-sizing: border-box; /* Ensure padding is included in the element's total width */
 }
 
 .coupon-content h3 {
@@ -296,6 +314,8 @@ button:hover {
 
 .coupon-image {
     flex: 1;
+    max-width: 50%;
+    box-sizing: border-box; /* Ensure padding is included in the element's total width */
     position: relative;
 }
 
@@ -414,160 +434,6 @@ footer {
     text-align: center;
     padding: 20px;
     border-top: 1px solid #403939;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
-}
-social-icons {
-    margin-top: 10px;
-}
-
-.social-icons a {
-    margin: 0 10px;
-}
-
-.social-icons img {
-    width: 20px;
-    height: 20px;
-}
-
-/* Add responsiveness */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    #countdown .time span {
-        font-size: 2.5rem;
-    }
-
-    #countdown .time div {
-        font-size: 1rem;
-    }
-
-    .hurry-sale-section h1 {
-        font-size: 2rem;
-    }
-
-    .hurry-sale-section h2 {
-        font-size: 1.5rem;
-    }
-
-    .sale-details h1 {
-        font-size: 2rem;
-    }
-
-    .sale-details h2 {
-        font-size: 1.5rem;
-    }
-
-    .sale-text h1 {
-        font-size: 2rem;
-    }
-
-    .sale-text h2 {
-        font-size: 1.5rem;
-    }
-
-    .coupon-content h2 {
-        font-size: 2rem;
-    }
-
-    .coupon-content h3 {
-        font-size: 0.8rem;
-    }
-
-    .coupon-section {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .coupon-image img {
-        width: 100%;
-    }
-
-    .remind-section h2 {
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.2rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    #countdown .time span {
-        font-size: 2rem;
-    }
-
-    #countdown .time div {
-        font-size: 0.8rem;
-    }
-
-    .hurry-sale-section h1 {
-        font-size: 1.5rem;
-    }
-
-    .hurry-sale-section h2 {
-        font-size: 1rem;
-    }
-
-    .sale-details h1 {
-        font-size: 1.5rem;
-    }
-
-    .sale-details h2 {
-        font-size: 1rem;
-    }
-
-    .sale-text h1 {
-        font-size: 1.5rem;
-    }
-
-    .sale-text h2 {
-        font-size: 1rem;
-    }
-
-    .coupon-content h2 {
-        font-size: 1.5rem;
-    }
-
-    .coupon-content h3 {
-        font-size: 0.7rem;
-    }
-
-    .coupon-section {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .coupon-image img {
-        width: 100%;
-    }
-
-    .remind-section h2 {
-        font-size: 1.2rem;
-    }
-}
-/* Add to your existing CSS */
-
-/* Adjust footer for responsiveness */
-footer {
-    background: #1f1e1e;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid #403939;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -594,27 +460,6 @@ footer p {
     height: 20px;
 }
 
-/* Adjust brands logos for responsiveness */
-.brands-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-    margin-bottom: 80px;
-}
-
-.brand-logo {
-    flex: 1 1 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.brand-logo img {
-    max-width: 100px;
-    height: auto;
-}
-
 /* Add responsiveness */
 @media (max-width: 768px) {
     h1 {
@@ -667,7 +512,17 @@ footer p {
 
     .coupon-section {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+    }
+
+    .coupon-content, .coupon-image {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .coupon-box {
+        flex-direction: column;
+        align-items: center;
     }
 
     .coupon-image img {
@@ -752,6 +607,11 @@ footer p {
         align-items: flex-start;
     }
 
+    .coupon-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .coupon-image img {
         width: 100%;
     }
@@ -779,5 +639,3 @@ footer p {
         max-width: 60px;
     }
 }
-
-
