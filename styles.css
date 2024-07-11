@@ -76,7 +76,8 @@ button:hover {
     background: #1f1e1e;
     color: white;
     text-align: center;
-    padding: -35px;
+    padding: 20px;
+    position: relative;
 }
 
 #countdown {
@@ -100,6 +101,28 @@ button:hover {
 
 .time div {
     font-size: 1.5rem;
+}
+
+.remind-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+}
+
+.remind-me-button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.remind-me-button:hover {
+    background-color: #e60000;
 }
 
 .hurry-sale-section {
@@ -462,6 +485,9 @@ footer p {
 
 /* Add responsiveness */
 @media (max-width: 768px) {
+    .hero {
+        height: 40vh; /* Adjusted height for mobile view */
+    }
     h1 {
         font-size: 1.5rem;
     }
@@ -551,6 +577,18 @@ footer p {
     .brand-logo img {
         max-width: 80px;
     }
+
+    /* Sale banner image responsiveness */
+    .sale-banner {
+        height: 200px;
+    }
+
+    .sale-banner img {
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -637,5 +675,17 @@ footer p {
 
     .brand-logo img {
         max-width: 60px;
+    }
+
+    /* Sale banner image responsiveness */
+    .sale-banner {
+        height: 150px;
+    }
+
+    .sale-banner img {
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
     }
 }
