@@ -486,7 +486,7 @@ footer p {
 /* Add responsiveness */
 @media (max-width: 768px) {
     .hero {
-        height: 40vh; /* Adjusted height for mobile view */
+        height: 30vh; /* Adjusted height for mobile view */
     }
     h1 {
         font-size: 1.5rem;
