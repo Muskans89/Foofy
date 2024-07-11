@@ -76,7 +76,7 @@ button:hover {
     background: #1f1e1e;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: -35px;
 }
 
 #countdown {
