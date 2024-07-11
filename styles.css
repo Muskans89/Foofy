@@ -1,0 +1,562 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+    background-color: #282727;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a2323;
+    padding: 10px 20px;
+    color: white;
+}
+
+.hero {
+    background-image: url('img2.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #f50707;
+    color: rgb(252, 252, 252);
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f90505;
+}
+
+.sale-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #1f1e1e;
+    position: relative;
+}
+
+.sale-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.countdown-section {
+    background: #1f1e1e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    border: 2px solid white;
+    padding: 20px;
+}
+
+.time {
+    margin: 0 30px;
+    text-align: center;
+}
+
+.time span {
+    font-size: 5rem;
+    display: block;
+}
+
+.time div {
+    font-size: 1.5rem;
+}
+
+.hurry-sale-section {
+    background: #1f1e1e;
+    color: white;
+    text-align: left;
+    padding: 50px 0;
+    position: relative;
+}
+
+.hurry-sale-section h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding-left: 5%;
+}
+
+.hurry-sale-section h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+    padding-left: 5%;
+}
+
+.sale-image {
+    position: relative;
+    display: inline-block;
+}
+
+.sale-image img {
+    width: 100%;
+    height: auto;
+}
+
+.sale-details {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.sale-details h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.sale-details h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.sale-details button {
+    background-color: #f9f5f5;
+    color: rgb(5, 4, 4);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sale-details button:hover {
+    background-color: #e60000;
+}
+
+.categories-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #1f1e1e;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.category {
+    position: relative;
+    flex: 1;
+    height: 300px;
+    overflow: hidden;
+}
+
+.category-wide {
+    flex: 2;
+}
+
+.category img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.brands-section {
+    background: #1f1e1e;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.brands-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.brands-section h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.brands-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 200px;
+    margin-bottom: 80px;
+}
+
+.brand-logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+.brands-section button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.brands-section button:hover {
+    background-color: #e60000;
+}
+
+.coupon-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f1e1e;
+    color: white;
+    padding: 50px 20px;
+}
+
+.coupon-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.coupon-content h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.coupon-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.coupon-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.coupon-content button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.coupon-content button:hover {
+    background-color: #e60000;
+}
+
+.coupon-image {
+    flex: 1;
+    position: relative;
+}
+
+.coupon-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sale-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #1f1e1e;
+    padding: 20px;
+}
+
+.sale-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 500px;
+}
+
+.sale-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sale-text {
+    position: absolute;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sale-text h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.sale-text h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.sale-text button {
+    background-color: #fcfbfb;
+    color: rgb(3, 3, 3);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 0;
+}
+
+.sale-text button:hover {
+    background-color: #e60000;
+}
+
+.remind-section {
+    background: #1f1e1e;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.remind-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.remind-section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.remind-section input {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    width: 300px;
+    max-width: 100%;
+    border-bottom: 2px solid white;
+    background: none;
+    color: white;
+}
+
+.remind-section button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 0;
+}
+
+.remind-section button:hover {
+    background-color: #e60000;
+}
+
+footer {
+    background: #1f1e1e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #403939;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #countdown .time span {
+        font-size: 2.5rem;
+    }
+
+    #countdown .time div {
+        font-size: 1rem;
+    }
+
+    .hurry-sale-section h1 {
+        font-size: 2rem;
+    }
+
+    .hurry-sale-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .sale-details h1 {
+        font-size: 2rem;
+    }
+
+    .sale-details h2 {
+        font-size: 1.5rem;
+    }
+
+    .sale-text h1 {
+        font-size: 2rem;
+    }
+
+    .sale-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .coupon-content h2 {
+        font-size: 2rem;
+    }
+
+    .coupon-content h3 {
+        font-size: 0.8rem;
+    }
+
+    .coupon-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .coupon-image img {
+        width: 100%;
+    }
+
+    .remind-section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #countdown .time span {
+        font-size: 2rem;
+    }
+
+    #countdown .time div {
+        font-size: 0.8rem;
+    }
+
+    .hurry-sale-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .hurry-sale-section h2 {
+        font-size: 1rem;
+    }
+
+    .sale-details h1 {
+        font-size: 1.5rem;
+    }
+
+    .sale-details h2 {
+        font-size: 1rem;
+    }
+
+    .sale-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .sale-text h2 {
+        font-size: 1rem;
+    }
+
+    .coupon-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .coupon-content h3 {
+        font-size: 0.7rem;
+    }
+
+    .coupon-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .coupon-image img {
+        width: 100%;
+    }
+
+    .remind-section h2 {
+        font-size: 1.2rem;
+    }
+}
+
