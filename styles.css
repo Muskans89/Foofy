@@ -1,3 +1,5 @@
+/* Existing CSS */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -738,6 +740,7 @@ footer p {
         max-width: 100px; /* Adjust the max width if needed */
     }
 }
+
 @media screen and (max-width: 768px) {
     .timer-container {
         /* Adjust positioning or margins to prevent overlapping */
@@ -750,5 +753,26 @@ footer p {
         /* Adjust styles for smaller screens */
         font-size: 14px; /* Example font size */
         padding: 10px; /* Example padding */
+    }
+}
+
+/* Additional CSS for sale-banner responsiveness */
+@media (max-width: 768px) {
+    .sale-banner {
+        height: 200px; /* Adjusted height for smaller screens */
+    }
+
+    .banner-video {
+        object-fit: cover; /* Ensure video scales properly */
+    }
+}
+
+@media (max-width: 480px) {
+    .sale-banner {
+        height: 150px; /* Further adjustment for very small screens */
+    }
+
+    .banner-video {
+        object-fit: cover; /* Ensure video scales properly */
     }
 }
