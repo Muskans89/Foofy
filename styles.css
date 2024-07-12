@@ -15,7 +15,7 @@ h1, h2, p, title, button, nav, .category-text, .remind-section input, .remind-se
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1e1d1d;
+    background-color: #121111;
     padding: 10px 20px;
     color: white;
 }
@@ -65,7 +65,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 5rem;
     margin: 20px 0;
 }
 
