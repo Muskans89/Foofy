@@ -18,6 +18,8 @@ h1, h2, p, title, button, nav, .category-text, .remind-section input, .remind-se
     background-color: #121111;
     padding: 10px 20px;
     color: white;
+    opacity: 0;
+    animation: fade-in 1s forwards;
 }
 
 .navbar-button {
@@ -57,6 +59,8 @@ h1, h2, p, title, button, nav, .category-text, .remind-section input, .remind-se
     align-items: center;
     color: white;
     text-align: center;
+    opacity: 0;
+    animation: fade-in 2s forwards 1s;
 }
 
 h1 {
@@ -106,8 +110,9 @@ button:hover, .overlay-button:hover {
     text-align: center;
     padding: 20px;
     position: relative;
+    opacity: 0;
+    animation: fade-in 2s forwards 2s;
 }
-
 
 #countdown {
     display: flex;
@@ -117,7 +122,6 @@ button:hover, .overlay-button:hover {
     border: 2px solid white;
     padding: 30px;
 }
-
 
 .time {
     margin: 0 30px;
@@ -161,6 +165,8 @@ button:hover, .overlay-button:hover {
     text-align: left;
     padding: 50px 0;
     position: relative;
+    opacity: 0;
+    animation: fade-in 2s forwards 3s;
 }
 
 .hurry-sale-section h1 {
@@ -235,6 +241,8 @@ button:hover, .overlay-button:hover {
     flex: 1;
     height: 300px;
     overflow: hidden;
+    opacity: 0;
+    animation: slide-in 1s forwards;
 }
 
 .category-wide {
@@ -258,11 +266,36 @@ button:hover, .overlay-button:hover {
     text-align: center;
 }
 
+.category .hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.category:hover .hover-img {
+    opacity: 1;
+}
+
+.category .default-img {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.category:hover .default-img {
+    opacity: 0;
+}
+
 .brands-section {
     background: #1f1e1e;
     color: white;
     text-align: center;
     padding: 50px 20px;
+    opacity: 0;
+    animation: fade-in 2s forwards 4s;
 }
 
 .brands-section h3 {
@@ -309,6 +342,8 @@ button:hover, .overlay-button:hover {
     padding: 50px 20px;
     display: flex;
     justify-content: center;
+    opacity: 0;
+    animation: fade-in 2s forwards 5s;
 }
 
 .coupon-container {
@@ -384,6 +419,8 @@ button:hover, .overlay-button:hover {
     gap: 20px;
     background: #1f1e1e;
     padding: 20px;
+    opacity: 0;
+    animation: fade-in 2s forwards 6s;
 }
 
 .sale-item {
@@ -447,6 +484,8 @@ button:hover, .overlay-button:hover {
     color: white;
     text-align: center;
     padding: 50px 20px;
+    opacity: 0;
+    animation: slide-in 1s forwards 7s;
 }
 
 .remind-section h2 {
@@ -508,6 +547,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 0;
+    animation: fade-in 2s forwards 8s;
 }
 
 footer p {
@@ -761,4 +802,15 @@ footer p {
         font-size: 14px;
         padding: 10px;
     }
+}
+
+/* Animation Keyframes */
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide-in {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
