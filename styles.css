@@ -39,7 +39,7 @@ h1, h2, p, title, button, nav, .category-text, .remind-section input, .remind-se
 .hero-video {
     width: 100%;
     height: 100%;
-    object-fit: fill; /* Adjust this property */
+    object-fit: fill;
     position: absolute;
     top: 0;
     left: 0;
@@ -101,7 +101,7 @@ button:hover, .overlay-button:hover {
 .sale-banner img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Ensure the image fits within its container without zooming in */
+    object-fit: contain;
 }
 
 .countdown-section {
@@ -313,7 +313,7 @@ button:hover, .overlay-button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 150px;
+    gap: 50px;
     margin-bottom: 80px;
 }
 
@@ -337,7 +337,7 @@ button:hover, .overlay-button:hover {
 }
 
 .coupon-section {
-    background: #000; /* Black background */
+    background: #000;
     color: white;
     padding: 50px 20px;
     display: flex;
@@ -350,24 +350,24 @@ button:hover, .overlay-button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Allow wrapping for responsiveness */
-    max-width: 1200px; /* Add a max-width to center content */
+    flex-wrap: wrap;
+    max-width: 1200px;
     width: 100%;
 }
 
 .coupon-box {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping for responsiveness */
-    background: #000; /* Black background for the entire box */
+    flex-wrap: wrap;
+    background: #000;
     padding: 20px;
-    box-sizing: border-box; /* Ensure padding is included in the element's total width */
+    box-sizing: border-box;
 }
 
 .coupon-content {
     flex: 1;
     padding: 20px;
     max-width: 50%;
-    box-sizing: border-box; /* Ensure padding is included in the element's total width */
+    box-sizing: border-box;
 }
 
 .coupon-content h3 {
@@ -403,7 +403,7 @@ button:hover, .overlay-button:hover {
 .coupon-image {
     flex: 1;
     max-width: 50%;
-    box-sizing: border-box; /* Ensure padding is included in the element's total width */
+    box-sizing: border-box;
     position: relative;
 }
 
@@ -525,17 +525,6 @@ button:hover, .overlay-button:hover {
 
 .remind-section button:hover {
     background-color: #bababa;
-}
-
-@media (max-width: 768px) {
-    .remind-section form {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .remind-section input {
-        margin-bottom: 10px;
-    }
 }
 
 footer {
