@@ -120,35 +120,36 @@ button:hover, .overlay-button:hover {
     align-items: center;
     margin: 20px 0;
     border: 2px solid white;
-    padding: 30px;
+    padding: 20px;
+    flex-wrap: wrap; /* Added for wrapping elements */
 }
 
 .time {
-    margin: 0 30px;
+    margin: 10px 20px; /* Adjusted for better spacing */
     text-align: center;
 }
 
 .time span {
-    font-size: 5rem;
+    font-size: 3rem; /* Adjusted for better visibility on small screens */
     display: block;
 }
 
 .time div {
-    font-size: 1.5rem;
+    font-size: 1rem; /* Adjusted for better visibility on small screens */
 }
 
 .remind-me-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -40px;
+    margin-top: 20px;
 }
 
 .remind-me-button {
     background-color: #ff0000;
     color: white;
     border: none;
-    padding: 15px 30px;
+    padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -170,13 +171,13 @@ button:hover, .overlay-button:hover {
 }
 
 .hurry-sale-section h1 {
-    font-size: 4rem;
+    font-size: 2.5rem; /* Adjusted for better visibility on small screens */
     margin: 0;
     padding-left: 5%;
 }
 
 .hurry-sale-section h2 {
-    font-size: 3rem;
+    font-size: 2rem; /* Adjusted for better visibility on small screens */
     margin: 10px 0;
     padding-left: 5%;
 }
@@ -688,7 +689,7 @@ footer p {
 
 @media (max-width: 480px) {
     .sale-banner {
-        height: 150px;
+        height: 200px;
     }
 
     .banner-video,
@@ -780,7 +781,101 @@ footer p {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
+    .sale-banner {
+        height: 150px;
+    }
+
+    .banner-video,
+    .sale-banner img {
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #countdown .time span {
+        font-size: 1.5rem;
+    }
+
+    #countdown .time div {
+        font-size: 0.8rem;
+    }
+
+    .hurry-sale-section h1 {
+        font-size: 1.2rem;
+    }
+
+    .hurry-sale-section h2 {
+        font-size: 1rem;
+    }
+
+    .sale-details h1 {
+        font-size: 1.2rem;
+    }
+
+    .sale-details h2 {
+        font-size: 1rem;
+    }
+
+    .sale-text h1 {
+        font-size: 1.2rem;
+    }
+
+    .sale-text h2 {
+        font-size: 1rem;
+    }
+
+    .coupon-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .coupon-content h3 {
+        font-size: 0.7rem;
+    }
+
+    .coupon-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .coupon-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .coupon-image img {
+        width: 100%;
+    }
+
+    .remind-section h2 {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.7rem;
+    }
+
+    .social-icons img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .brands-logos {
+        gap: 20px;
+    }
+
+    .brand-logo img {
+        max-width: 60px;
+    }
+}
+
+@media screen and (max-width: 812px) {
     .timer-container {
         position: relative;
         margin-top: 20px;
