@@ -92,6 +92,7 @@ button, .overlay-button {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 50px;
 }
 
 button:hover, .overlay-button:hover {
@@ -111,8 +112,7 @@ button:hover, .overlay-button:hover {
 .banner-video,
 .sale-banner img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Changed to cover for full visibility */
+    height: auto; /* Ensure full visibility without zooming */
 }
 
 .countdown-section {
@@ -143,7 +143,7 @@ button:hover, .overlay-button:hover {
     align-items: center;
     margin: 40px 0 0; /* Adjusted for better spacing */
     border: 2px solid white;
-    padding: 20px;
+    padding: 40px;
     flex-wrap: nowrap; /* Adjusted for no wrapping */
 }
 
@@ -151,16 +151,16 @@ button:hover, .overlay-button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px; /* Adjusted top margin to move button down */
+    margin-top: -15px; /* Adjusted top margin to move button down */
 }
 
 .time {
-    margin: 0 10px; /* Adjusted for better spacing */
+    margin: 0 60px; /* Adjusted for better spacing */
     text-align: center;
 }
 
 .time span {
-    font-size: 3rem; /* Adjusted for better visibility on small screens */
+    font-size: 4rem; /* Adjusted for better visibility on small screens */
     display: block;
 }
 
@@ -750,7 +750,7 @@ footer p {
     }
 
     .remind-me-container {
-        margin-top: 20px; /* Ensure button is below the countdown */
+        margin-top: -20px; /* Ensure button is below the countdown */
     }
 
     .hurry-sale-section h1 {
@@ -867,7 +867,7 @@ footer p {
     }
 
     .remind-me-container {
-        margin-top: 20px; /* Ensure button is below the countdown */
+        margin-top: -20px; /* Ensure button is below the countdown */
     }
 
     .hurry-sale-section h1 {
