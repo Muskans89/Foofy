@@ -1,8 +1,8 @@
-// script.js
+const targetDate = new Date().getTime() + 14 * 24 * 60 * 60 * 1000; // 14 days from now
+
 const countdown = () => {
-    const countDate = new Date("Nov 25, 2024 00:00:00").getTime();
     const now = new Date().getTime();
-    const gap = countDate - now;
+    const gap = targetDate - now;
 
     const second = 1000;
     const minute = second * 60;
@@ -14,10 +14,10 @@ const countdown = () => {
     const textMinute = Math.floor((gap % hour) / minute);
     const textSecond = Math.floor((gap % minute) / second);
 
-    document.getElementById('days').innerText = textDay;
-    document.getElementById('hours').innerText = textHour;
-    document.getElementById('minutes').innerText = textMinute;
-    document.getElementById('seconds').innerText = textSecond;
+    document.getElementById('days').innerText = textDay < 10 ? '0' + textDay : textDay;
+    document.getElementById('hours').innerText = textHour < 10 ? '0' + textHour : textHour;
+    document.getElementById('minutes').innerText = textMinute < 10 ? '0' + textMinute : textMinute;
+    document.getElementById('seconds').innerText = textSecond < 10 ? '0' + textSecond : textSecond;
 };
 
 setInterval(countdown, 1000);
