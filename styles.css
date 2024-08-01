@@ -65,12 +65,23 @@ h1, h2, p, title, button, nav, .category-text, .remind-section input, .remind-se
 
 h1 {
     font-size: 2rem;
-    margin: 0;
+    margin: 20px 0 10px; /* Add margin to create space */
 }
 
 h2 {
-    font-size: 4rem;
-    margin: 20px 0;
+    font-size: 6rem;
+    margin: 5px 0; /* Reduce top and bottom margin */
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 20px 0; /* Add margin to create space */
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 0; /* Remove top and bottom margin */
+    padding: 0; /* Remove padding if any */
 }
 
 button, .overlay-button {
@@ -101,7 +112,7 @@ button:hover, .overlay-button:hover {
 .sale-banner img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover; /* Changed to cover for full visibility */
 }
 
 .countdown-section {
@@ -112,20 +123,39 @@ button:hover, .overlay-button:hover {
     position: relative;
     opacity: 0;
     animation: fade-in 2s forwards 2s;
+    margin-bottom: 0; /* Adjusted to remove bottom margin */
+}
+
+.countdown-section h1 {
+    font-size: 1.3rem;
+    margin-bottom: 15px; /* Adjust space below */
+}
+
+.countdown-section h3 {
+    font-size: 2.5rem; /* Adjust size as needed */
+    margin: 20px 0; /* Adjust space above and below */
+    padding: 0; /* Ensure no padding */
 }
 
 #countdown {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 40px 0 0; /* Adjusted for better spacing */
     border: 2px solid white;
     padding: 20px;
-    flex-wrap: wrap; /* Added for wrapping elements */
+    flex-wrap: nowrap; /* Adjusted for no wrapping */
+}
+
+.remind-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Adjusted top margin to move button down */
 }
 
 .time {
-    margin: 10px 20px; /* Adjusted for better spacing */
+    margin: 0 10px; /* Adjusted for better spacing */
     text-align: center;
 }
 
@@ -138,22 +168,18 @@ button:hover, .overlay-button:hover {
     font-size: 1rem; /* Adjusted for better visibility on small screens */
 }
 
-.remind-me-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
 .remind-me-button {
-    background-color: #ff0000;
+    background-color: #ff4500; /* Adjusted to match the orange color */
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: 15px 30px; /* Adjusted padding for a larger button */
+    font-size: 1.2rem; /* Increased font size */
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-align: center;
+    text-transform: uppercase; /* Uppercase text */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+    border-radius: 0px; /* Slightly rounded corners */
 }
 
 .remind-me-button:hover {
@@ -171,13 +197,13 @@ button:hover, .overlay-button:hover {
 }
 
 .hurry-sale-section h1 {
-    font-size: 2.5rem; /* Adjusted for better visibility on small screens */
+    font-size: 3rem; /* Adjusted for better visibility on small screens */
     margin: 0;
     padding-left: 5%;
 }
 
 .hurry-sale-section h2 {
-    font-size: 2rem; /* Adjusted for better visibility on small screens */
+    font-size: 4rem; /* Adjusted for better visibility on small screens */
     margin: 10px 0;
     padding-left: 5%;
 }
@@ -214,7 +240,7 @@ button:hover, .overlay-button:hover {
     background-color: #f9f5f5;
     color: rgb(5, 4, 4);
     border: none;
-    padding: 10px 20px;
+    padding: 10px 30px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -300,13 +326,13 @@ button:hover, .overlay-button:hover {
 }
 
 .brands-section h3 {
-    font-size: 1rem;
+    font-size: 2rem; /* Increased font size for main heading */
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 
 .brands-section h2 {
-    font-size: 4rem;
+    font-size: 1.5rem; /* Decreased font size for sub-heading */
     margin-bottom: 50px;
 }
 
@@ -314,12 +340,12 @@ button:hover, .overlay-button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 50px; /* Adjusted gap between logos */
     margin-bottom: 80px;
 }
 
 .brand-logo img {
-    max-width: 100px;
+    max-width: 200px; /* Increased size for logos */
     height: auto;
 }
 
@@ -689,7 +715,7 @@ footer p {
 
 @media (max-width: 480px) {
     .sale-banner {
-        height: 200px;
+        height: 400px; /* Increased height for better visibility */
     }
 
     .banner-video,
@@ -697,12 +723,22 @@ footer p {
         object-fit: cover;
     }
 
-    h1 {
-        font-size: 1.2rem;
+    .countdown-section h1 {
+        font-size: 1rem; /* Smaller size for "BLACK FRIDAY Sale" */
     }
 
-    h2 {
-        font-size: 1.5rem;
+    .countdown-section h3 {
+        font-size: 1.5rem; /* Smaller size for "Save Big on Special Offer" */
+    }
+
+    #countdown {
+        flex-direction: row; /* Ensure elements stay in a single row */
+        flex-wrap: nowrap;
+        align-items: center; /* Center align the elements */
+    }
+
+    #countdown .time {
+        margin: 0 10px; /* Adjust margin for better spacing */
     }
 
     #countdown .time span {
@@ -710,7 +746,11 @@ footer p {
     }
 
     #countdown .time div {
-        font-size: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .remind-me-container {
+        margin-top: 20px; /* Ensure button is below the countdown */
     }
 
     .hurry-sale-section h1 {
@@ -772,18 +812,27 @@ footer p {
         height: 16px;
     }
 
-    .brands-logos {
-        gap: 20px;
+    .brands-section h3 {
+        font-size: 1.2rem; /* Larger size for main heading */
+    }
+
+    .brands-section h2 {
+        font-size: 0.8rem; /* Smaller size for sub-heading */
     }
 
     .brand-logo img {
-        max-width: 60px;
+        max-width: 140px; /* Increase logo size */
+        height: auto;
+    }
+
+    .brands-logos {
+        gap: 20px; /* Adjust gap between logos */
     }
 }
 
 @media screen and (max-width: 375px) {
     .sale-banner {
-        height: 150px;
+        height: 400px; /* Increased height for better visibility */
     }
 
     .banner-video,
@@ -799,6 +848,16 @@ footer p {
         font-size: 1.2rem;
     }
 
+    #countdown {
+        flex-direction: row; /* Ensure elements stay in a single row */
+        flex-wrap: nowrap;
+        align-items: center; /* Center align the elements */
+    }
+
+    #countdown .time {
+        margin: 0 5px; /* Adjust margin for better spacing */
+    }
+
     #countdown .time span {
         font-size: 1.5rem;
     }
@@ -807,12 +866,16 @@ footer p {
         font-size: 0.8rem;
     }
 
+    .remind-me-container {
+        margin-top: 20px; /* Ensure button is below the countdown */
+    }
+
     .hurry-sale-section h1 {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
     .hurry-sale-section h2 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .sale-details h1 {
@@ -866,12 +929,21 @@ footer p {
         height: 16px;
     }
 
-    .brands-logos {
-        gap: 20px;
+    .brands-section h3 {
+        font-size: 1.2rem; /* Larger size for main heading */
+    }
+
+    .brands-section h2 {
+        font-size: 0.8rem; /* Smaller size for sub-heading */
     }
 
     .brand-logo img {
-        max-width: 60px;
+        max-width: 80px; /* Increase logo size */
+        height: auto;
+    }
+
+    .brands-logos {
+        gap: 20px; /* Adjust gap between logos */
     }
 }
 
