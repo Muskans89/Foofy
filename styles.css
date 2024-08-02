@@ -92,6 +92,7 @@ button, .overlay-button {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
 button:hover, .overlay-button:hover {
@@ -102,7 +103,7 @@ button:hover, .overlay-button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 550px;
     background-color: #1f1e1e;
     position: relative;
     overflow: hidden;
@@ -325,21 +326,21 @@ button:hover, .overlay-button:hover {
 }
 
 .brands-section h3 {
-    font-size: 2rem; /* Increased font size for main heading */
-    margin-bottom: 10px;
+    font-size: 1rem; /* Increased font size for main heading */
+    margin-bottom: 20px;
     text-transform: uppercase;
 }
 
 .brands-section h2 {
-    font-size: 1.5rem; /* Decreased font size for sub-heading */
-    margin-bottom: 50px;
+    font-size: 3.5rem; /* Decreased font size for sub-heading */
+    margin-bottom: 90px;
 }
 
 .brands-logos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px; /* Adjusted gap between logos */
+    gap: 100px; /* Adjusted gap between logos */
     margin-bottom: 80px;
 }
 
@@ -823,15 +824,15 @@ footer p {
     }
 
     .brands-section h3 {
-        font-size: 1.2rem; /* Larger size for main heading */
+        font-size: 0.7rem; /* Larger size for main heading */
     }
 
     .brands-section h2 {
-        font-size: 0.8rem; /* Smaller size for sub-heading */
+        font-size: 1.8rem; /* Smaller size for sub-heading */
     }
 
     .brand-logo img {
-        max-width: 140px; /* Increase logo size */
+        max-width: 190px; /* Increase logo size */
         height: auto;
     }
 
@@ -853,7 +854,7 @@ footer p {
         height: 100%;
     }
     .sale-banner {
-        height: 400px; /* Increased height for better visibility */
+        height: 600px; /* Increased height for better visibility */
     }
 
     .banner-video,
@@ -951,15 +952,15 @@ footer p {
     }
 
     .brands-section h3 {
-        font-size: 1.2rem; /* Larger size for main heading */
+        font-size: 0.7rem; /* Larger size for main heading */
     }
 
     .brands-section h2 {
-        font-size: 0.8rem; /* Smaller size for sub-heading */
+        font-size: 1.8rem; /* Smaller size for sub-heading */
     }
 
     .brand-logo img {
-        max-width: 80px; /* Increase logo size */
+        max-width: 150px; /* Increase logo size */
         height: auto;
     }
 
