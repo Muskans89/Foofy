@@ -840,15 +840,15 @@ footer p {
 
 @media screen and (max-width: 375px) {
     .hero-video {
-        height: 500px; /* Increase height for the video element in mobile view */
+        height: 100px; /* Increase height for the video element in mobile view */
     }
 
     .banner-video
    {
-        height: 100%;
+        height: 80%;
     }
     .sale-banner {
-        height: 400px; /* Increased height for better visibility */
+        height: 300px; /* Increased height for better visibility */
     }
 
     .banner-video,
