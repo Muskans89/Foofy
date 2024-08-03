@@ -705,7 +705,7 @@ footer p {
     }
 
     .brand-logo img {
-        max-width: 80px;
+        max-width: 120px;
     }
 
     .categories-section .row {
@@ -716,9 +716,6 @@ footer p {
 @media (max-width: 480px) {
     .hero-video {
         height: 500px; /* Increase height for the video element in mobile view */
-    }
-    .sale-banner {
-        height: 500px; /* Ensure the container matches the video height */
     }
 
     .banner-video
@@ -845,16 +842,13 @@ footer p {
     .hero-video {
         height: 500px; /* Increase height for the video element in mobile view */
     }
-    .sale-banner {
-        height: 500px; /* Ensure the container matches the video height */
-    }
 
     .banner-video
    {
         height: 100%;
     }
     .sale-banner {
-        height: 600px; /* Increased height for better visibility */
+        height: 400px; /* Increased height for better visibility */
     }
 
     .banner-video,
