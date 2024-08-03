@@ -720,10 +720,10 @@ footer p {
 
     .banner-video
    {
-        height: 100%;
+        height: 80%;
     }
     .sale-banner {
-        height: 400px; /* Increased height for better visibility */
+        height: 300px; /* Increased height for better visibility */
     }
 
     .banner-video,
