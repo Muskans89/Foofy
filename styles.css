@@ -151,7 +151,7 @@ button:hover, .overlay-button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -15px; /* Adjusted top margin to move button down */
+    margin-top: -30px; /* Adjusted top margin to move button down */
 }
 
 .time {
@@ -941,7 +941,7 @@ footer p {
     .remind-section h2 {
         font-size: 1rem;
     }
-
+   
     footer p {
         font-size: 0.7rem;
     }
